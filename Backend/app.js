@@ -11,6 +11,9 @@ app.use(express.json());
 
 app.use('/api/auth',authRoutes)
 
+const poemRoutes = require("./routes/poemRoutes");
+app.use("/api/poem", poemRoutes);
+
 app.get('/test', (req, res) => {
     res.send('Server is working');
 });

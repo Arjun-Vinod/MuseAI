@@ -1,8 +1,14 @@
-const express=require('express');
-const {registerUser,loginUser}=require('../controllers/authcontroller');
-const router=express.Router();
+const express = require('express');
+const { registerUser, loginUser } = require('../controllers/authcontroller');
+const authMiddleware = require('../middleware/authMiddleware'); 
 
-router.post("/register",registerUser);
-router.post("/login",loginUser);
+const router = express.Router();
 
-module.exports=router;
+router.post("/register", registerUser);
+router.post("/login", loginUser);
+
+router.get("/profile", authMiddleware, (req, res) => {
+    res.json({ message: `Hello, ${req.user.id}! This is your profile.` });
+});
+
+module.exports = router;
