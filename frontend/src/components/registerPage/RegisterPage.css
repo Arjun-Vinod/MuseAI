@@ -32,11 +32,6 @@
     justify-content: center;
     color: #13375c;
 }
-
-.form-container h4 {
-    margin-top: -10px;
-}
-
 .register-form {
     display: flex;
     flex-direction: column;
@@ -140,3 +135,9 @@
         width: 100%;
     }
 }
+.error-message {
+    color: red; 
+    font-size: 14px; 
+    margin-top: 5px; 
+}
+  

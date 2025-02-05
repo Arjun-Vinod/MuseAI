@@ -32,6 +32,15 @@
     justify-content: center;
     color: #13375c;
 }
+
+.form-container h4 a{
+    text-decoration: none;
+    color:#444;
+    font-weight: lighter;
+}
+#link{
+    margin-top: -10px;
+}
 .login-form {
     display: flex;
     flex-direction: column;
@@ -103,6 +112,11 @@
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
+}
+.error-message {
+    color: red; 
+    font-size: 14px; 
+    margin-top: 5px; 
 }
 
 /* Responsive Styles */
