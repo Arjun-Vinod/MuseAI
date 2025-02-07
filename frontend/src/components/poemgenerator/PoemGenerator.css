@@ -1,0 +1,14 @@
+.profile-container{
+    display: flex;
+
+}
+.left-container{
+    flex: 1;
+    min-height: 100vh;
+    background-color: black;
+}
+.right-container{
+    flex: 3;
+    min-height: 100vh;
+    background-color: cadetblue;
+}
