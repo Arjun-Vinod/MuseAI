@@ -30,7 +30,7 @@ const RegisterPage = () => {
       );
 
       alert('Registration successful. Please log in.');
-      navigate('/login'); // Redirect after successful registration
+      navigate('/login'); 
     } catch (err) {
       if (err.response && err.response.data.message) {
         setError(err.response.data.message);

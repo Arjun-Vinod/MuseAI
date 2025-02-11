@@ -1,0 +1,6 @@
+.header-container{
+    display: flex;
+    padding: 10px;
+    color:#ffb135;
+    font-weight: bold;
+}

@@ -16,7 +16,7 @@ const LoginPage = () => {
     try {
       const response = await axios.post('http://localhost:4000/api/auth/login', { email, password });
       localStorage.setItem('token', response.data.token);
-      navigate('/poem-generator'); // Redirect after successful login
+      navigate('/poem-generator'); 
     } catch (err) {
       setError('Invalid email or password. Please try again.');
     }

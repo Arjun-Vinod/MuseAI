@@ -119,7 +119,7 @@
     margin-top: 5px; 
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .main-container {
         padding: 0;
